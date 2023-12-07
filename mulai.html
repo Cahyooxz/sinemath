@@ -21,7 +21,7 @@
     
     <nav class="navbar1">
         <div class="max-width">
-            <div class="logo"><a href="#">Pembelajaran<span> SinCosTan</span></a></div>
+            <div class="logo"><a class="titleatas" href="#">Pembelajaran<span class="sincostanspan"> SinCosTan</span></a></div>
             <ul class="menu">
                 <!-- <li><a href="#Trigonometry" class="menu-btn">Trigonometry</a></li>
                 <li><a href="#Sinus" class="menu-btn">Sinus</a></li>
@@ -36,6 +36,21 @@
             </div>
         </div>
     </nav>
+
+    <div class="pembungkusrespon">
+        <div class="logo"><a href="#">Pembelajaran<span> SinCosTan</span></a></div>
+    <div id="burger-menu">
+        <span></span>
+      </div>
+      
+      <div id="respon">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#belajar">Pembelajaran</a></li>
+            <li><a href="#gf">Grafik Sinus</a></li>
+          </ul>
+      </div>
+    </div>
 
     <section class="home" id="home">
         <div class="max-width">
@@ -248,7 +263,7 @@
                         <h2 class="judulgrafik" style="font-family: 'Poppins', sans-serif;">Masukkan Besar Sudut (dalam satuan derajat) :</h2>
                         <div class="satubaris mt-5">
                             <input type="number" id="angleInput" style="width: 330px" placeholder="Masukkan sudut ex 90"/>
-                            <button class="btn ms-3" style="background-color: crimson; color: whitesmoke; width: 250px;" onclick="updateGraph()">Update Grafik</button>
+                            <button class="buttonconfirm btn ms-3" style="background-color: crimson; color: whitesmoke; width: 250px;" onclick="updateGraph()">Update Grafik</button>
                         </div>
                         <div id="sinusGraph">
                         </div>

@@ -510,11 +510,161 @@ footer span a{
 footer span a:hover{
     text-decoration: underline;
 }
-@media only screen and (max-width: 600px) {
+
+/* navbar */
+.pembungkusrespon{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+}
+@media only screen and (max-width: 945px) {
+    .navbar1 .logo a {
+        display: flex;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .menu{
+        display:flex;
+    }
+}
+@media only screen and (max-width: 726px) {
+    /* navbar */
+    *{
+        max-width: 726px;
+    }
+
+    .navbar1{
+        display: none;
+    }
+
+    .pembungkusrespon{
+        font-weight: 600;
+        z-index: 1001;
+        background-color: black;
+        justify-content: space-between;
+        height: 60px;
+        align-items: center;
+        display: flex;
+    }
+    .pembungkusrespon .logo a{
+        margin: 10px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .pembungkusrespon .logo a span{
+        color: crimson;
+        transition: all 0.3s ease;
+    }
+    .pembungkusrespon.sticky .logo a span{
+        color: #ffffff;
+    }
+
+    #burger-menu {
+        margin: 10px;
+        cursor: pointer;
+        height: 27px;
+        width: 27px;
+        overflow: visible;
+        position: relative;
+        z-index: 2;
+      }
+
+      #burger-menu span{
+    }
+
+      #burger-menu span,
+      #burger-menu span:before,
+      #burger-menu span:after {
+        background: #fff;
+        display: block;
+        height: 2px;
+        opacity: 1;
+        position: absolute;
+        transition: 0.3s ease-in-out;
+      }
+      #burger-menu span:before,
+      #burger-menu span:after {
+        content: "";
+      }
+      #burger-menu span:before {
+        left: 0px;
+        top: -10px;
+        width: 27px;
+      }
+      #burger-menu span {
+        right: 0px;
+        top: 13px;
+        width: 27px;
+      }
+      #burger-menu span:after {
+        left: 0px;
+        top: 10px;
+        width: 27px;
+      }
+      #burger-menu.close span:before {
+        top: 0px;
+        transform: rotate(90deg);
+        width: 27px;
+      }
+      #burger-menu.close span {
+        transform: rotate(-45deg);
+        top: 13px;
+        width: 27px;
+      }
+      #burger-menu.close span:after {
+        top: 0px;
+        left: 0;
+        transform: rotate(90deg);
+        opacity: 0;
+        width: 0;
+      }
+      
+      #respon {
+        z-index: 1;
+        min-width: 100%;
+        min-height: 100%;
+        position: fixed;
+        top: 0;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        text-align: center;
+        padding-top: 20px;
+        transition: all 0.3s ease-in-out;
+      }
+      #respon.overlay {
+        visibility: visible;
+        opacity: 1;
+        padding-top: 100px;
+        background: rgba(0, 0, 0, 0.85);
+      }
+      #respon ul {
+        padding: 0;
+      }
+      #respon li {
+        list-style: none;
+      }
+      #respon a {
+        color: #fff;
+        display: block;
+        font-size: 32px;
+        margin-bottom: 30px;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+      }
+
+      /* end */
+
     .home .max-width {
         margin: 0;
         padding: 0;
     }
+
+
     .tab_box{
         padding-top: 10px;
         gap: 1px;
@@ -566,7 +716,32 @@ footer span a:hover{
         margin-left: 30px;
         margin-top: 30vh;
     }
-    ul{
+    .pembungkusrespon .logo{
+        padding-left: 30px;
+    }
+    #burger-menu{
+        margin-right: 30px;
+    }
+}
+@media only screen and (max-width : 726px){
+    .pembungkusrespon .sincostanspan{
+        margin: 20px;
+        padding: 0;
+    }
+}
+@media only screen and (min-width: 727px) and (max-width : 2000px) {
+    .pembungkusrespon{
+        display: none;
+    }
+    .navbar1{
+        display: block;
+    }
+    .navbar1 .logo a{
         display: flex;
+        margin-bottom: 30px;
+    }
+    .menu{
+        display: flex;
+        margin-bottom: 30px;
     }
 }

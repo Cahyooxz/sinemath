@@ -127,3 +127,30 @@ function updateGraph() {
     // Membuat plot menggunakan Plotly
     Plotly.newPlot('sinusGraph', [trace], layout);
     }
+
+    // navbar
+    var burgerMenu = document.getElementById('burger-menu');
+    var overlay = document.getElementById('respon');
+    var menuItems = document.querySelectorAll('.menu li a'); // Memilih semua item menu
+    
+    burgerMenu.addEventListener('click', function() {
+      this.classList.toggle("close");
+      overlay.classList.toggle("overlay");
+    });
+    
+    // Menambahkan event listener untuk setiap item di dalam menu
+    menuItems.forEach(function(item) {
+      item.addEventListener('click', function() {
+        // Menutup menu setelah item di dalam menu diklik
+        burgerMenu.classList.remove("close");
+        overlay.classList.remove("overlay");
+      });
+    });
+    
+    // Menutup menu saat area luar overlay diklik
+    overlay.addEventListener('click', function() {
+      burgerMenu.classList.remove("close");
+      overlay.classList.remove("overlay");
+    });
+    
+
