@@ -439,7 +439,7 @@ section .title::after{
 
 /* grafik */
 .pembungkusgrafik{
-    margin-top: 0;
+    margin-top: 110px;
     min-height: 70vh;
 }
 
@@ -516,6 +516,9 @@ footer span a:hover{
     background-color: black;
     position: fixed;
     width: 100%;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
 }
 @media only screen and (max-width: 945px) {
     .navbar1 .logo a {
@@ -540,6 +543,7 @@ footer span a:hover{
     }
 
     .pembungkusrespon{
+        font-family: Ubuntu;
         font-weight: 600;
         z-index: 1001;
         background-color: black;
@@ -639,7 +643,7 @@ footer span a:hover{
       #respon.overlay {
         visibility: visible;
         opacity: 1;
-        padding-top: 100px;
+        padding-top: 70px;
         background: rgba(0, 0, 0, 0.85);
       }
       #respon ul {
@@ -650,7 +654,7 @@ footer span a:hover{
       }
       #respon a {
         color: #fff;
-        display: block;
+        display: flex;
         font-size: 32px;
         margin-bottom: 30px;
         text-decoration: none;
@@ -717,7 +721,7 @@ footer span a:hover{
         margin-top: 30vh;
     }
     .pembungkusrespon .logo{
-        padding-left: 30px;
+        padding-left: 10px;
     }
     #burger-menu{
         margin-right: 30px;
@@ -727,6 +731,10 @@ footer span a:hover{
     .pembungkusrespon .sincostanspan{
         margin: 20px;
         padding: 0;
+    }
+    .pembungkusgrafik{
+        margin-top: 0;
+        min-height: 70vh;
     }
 }
 @media only screen and (min-width: 727px) and (max-width : 2000px) {

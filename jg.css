@@ -680,6 +680,16 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+@media screen and (max-width: 365px) {
+    img{
+        height: 30px;
+    }
+    .max-width{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 765px) {
+}
 
 .curve1{
     right: 15px;
