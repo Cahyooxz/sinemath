@@ -755,7 +755,7 @@ footer span a:hover{
         padding: 20px;
     }
     #gf{
-        margin-top: 65vh;
+        margin-top: 35vh;
         padding: 25px;
     }
     #gf h1{
@@ -805,7 +805,7 @@ footer span a:hover{
         padding: 20px;
     }
     #gf{
-        margin-top: 50vh;
+        margin-top: 40vh;
         padding: 25px;
     }
     #gf h1{
@@ -858,27 +858,12 @@ footer span a:hover{
 }
 @media screen and (max-width: 360px) {
     #gf{
-        margin-top: 100vh;
+        margin-top: 80vh;
     }
 }
 @media screen and (max-width: 328px) {
     #gf{
-        margin-top: 100vh;
-    }
-}
-@media screen and (max-width: 540px) {
-    #gf{
-        margin-top: 250vh;
-    }
-}
-@media screen and (max-width: 720px) {
-    #gf{
-        margin-top: 100vh;
-    }
-}
-@media screen and (max-width: 420px) {
-    #gf{
-        margin-top: 180vh;
+        margin-top:50vh;
     }
 }
 @media screen and (max-width: 365px) {
