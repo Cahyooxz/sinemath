@@ -654,7 +654,7 @@ footer span a:hover{
       }
       #respon a {
         color: #fff;
-        display: block;
+        display: flex;
         font-size: 32px;
         margin-bottom: 30px;
         text-decoration: none;
